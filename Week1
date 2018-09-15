@@ -1,1 +1,176 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BMW.html</title>
+	</head>
+	
+	<body>
+		
+		<p> start </p> 
+		
+		<table border="1" width=600>
+			<tr>
+				<td width=200><img src="bmw1.jpg" width=200></td>
+				<td width=200><img src="bmw2.jpg" width=200></td>
+				<td width=200><img src="bmw3.jpg" width=200></td>
+			<tr>
+				<td width=200><img src="bmw4.jpg" width=200></td>
+				<td width=200><img src="bmw5.jpg" width=200></td>
+				<td width=200><img src="bmw6.jpg" width=200></td>
+			<tr>
+				<td width=200> 
+				Brand<br>
+				Model<br>
+				Year<br>
+				Year<br>
+				Mileage<br>
+				Price<br>
+				</td>
+				
+				<td width=200>
+				<strong>BMW</strong><br>
+				<strong>X5</strong><br>
+				<strong>2013</strong><br>
+				<strong>2013</strong><br>
+				<strong>190000</strong><br>
+				<strong>123000</strong><br>
+		
+				</td>
+		
+		
+		
+		</table>
+		
+		
+		
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Название страницы</title>
+		
+		
+	</head>
+	<body>
+	
+		<p> start </p>
+		<a href="porsche.html" title="More images" target="_blank">Click</a>
+		
+		<table width=500>
+			<tr>
+				<td height=50 colspan="2"><h1>BMW X5</h1></td>
+			</tr>
+			
+			<tr>
+				<td width=300><img src="BMWX5.jpg" ></td>
+				<td rowspan="6">The BMW X5 is a mid-size luxury SUV produced by BMW. The first generation of the X5, with the chassis code E53,<br>
+				made its debut in 1999. It was BMW's first SUV and it also featured all-wheel drive and was available with either manual or <br>
+				automatic transmission. In 2006, the second generation X5 was launched, known internally as the E70, featuring the torque-split <br>
+				capable xDrive all-wheel drive system mated to an automatic transmission, and in 2009 the X5 M performance variant was released <br>
+				as a 2010 model[1].
+				</td>
+			</tr>
+			
+			<tr>
+				<td><a href="bmw.html" title="More images" target="_blank">More images</a></td>
+			</tr>	
+		
+		</table>
+		
+		
+		
+		
+		<br>
+		<br>
+		
+		
+		
+		
+		<table border="1" width=500>
+			<tr>
+				<td height=50 colspan="2"><h1>Porsche Cayenne</h1></td>
+			</tr>
+			
+			<tr>
+				<td width=300><img src="porsche1.jpg" width=300 ></td>
+				<td rowspan="6">The Porsche Cayenne is a mid-size luxury crossover sport utility vehicle produced by the German manufacturer<br>
+				Porsche since 2002, with North American sales beginning in 2003. It is the first V8-engined vehicle built by Porsche since 1995,<br>
+				when the Porsche 928 was discontinued. It is also Porsche's first off road variant vehicle since its Super and Junior tractors<br>
+				of 1950s, and the first Porsche with four doors. Since 2008, all engines have featured direct injection technology.<br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><a href="porsche.html" title="More images" target="_blank">More images</a></td>
+			</tr>	
+		
+		</table>
+		
+		
+		
+		
+		
+	
+	
+	
+		
+	</body>
+</html>
+		
+		
+		
+	</body>
+</html><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>porsche.html</title>
+	</head>
+	
+	<body>
+		
+		<p> start </p> 
+		
+		<table border="1" width=600>
+			<tr>
+				<td width=200><img src="porsche1.jpg" width=200></td>
+				<td width=200><img src="porsche2.jpg" width=200></td>
+				<td width=200><img src="porsche3.jpg" width=200></td>
+			<tr>
+				<td width=200><img src="porsche5.jpg" width=200></td>
+				<td width=200><img src="porsche6.jpg" width=200></td>
+				<td width=200><img src="porsche7.jpg" width=200></td>
+			<tr>
+				<td width=200> 
+				Brand<br>
+				Model<br>
+				Year<br>
+				Year<br>
+				Mileage<br>
+				Price<br>
+				</td>
+				
+				<td width=200>
+				<strong>Porsche</strong><br>
+				<strong>Cayenne</strong><br>
+				<strong>2010</strong><br>
+				<strong>2010</strong><br>
+				<strong>100000</strong><br>
+				<strong>150000</strong><br>
+		
+				</td>
+		
+		
+		
+		</table>
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
