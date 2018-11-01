@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+      #cards .card{
+        border:1px solid red;
+        display:flex;
+        width:300px;
+      }
+      #cards .card .title{
+        flex-grow: 1;
+      }
+      #cards .card .price{
+        font-weight: bold;
+        padding-right: 20px;
+      }
+      #loading{
+        display: none;
+      }
+      #cards{
+        width:300px;
+        height:200px;
+        border: 1px solid blue;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <button>Load</button>
+    <div>
+      <button id="sortByMaker">Sort by maker</button>
+      <button id="sortByPrice">Sort by price</button>
+    </div>
+    <div id="cards">
+      <img width="300px" height="200px" id="loading" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"/>
+    </div>
+
+
+
+
+
+
+
+    <script defer>
+       lists = [];
+         var cards_ =  document.querySelector("#cards");
+         var image = document.querySelector("#loading");
+         image.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif";
+         image.style.display = "block";
+ 
+         var but = document.querySelector("button");
+         function loadList(){
+             fetch("http://demo4296963.mockable.io/listCars").then(function(response){
+                 return response.json();
+             }).then(function(event){
+                 cards_.innerHTML = "";
+                 lists = event;
+                 console.log(lists);
+                 for (let i in lists){
+                     let card = document.createElement("div");
+                     let model_maker = document.createElement("div");
+                     let price_div = document.createElement("div");
+                     model_maker.textContent = lists[i].maker + lists[i].model;
+                     price_div.textContent = lists[i].price;
+                     card.className ="card";
+                     model_maker.className = "title";
+                     price_div.className = "price";
+                     card.append(model_maker);
+                     card.append(price_div); 
+                     cards_.append(card);  
+                     image.style.display ="none"; 
+                 }
+             });
+         }
+        document.querySelector("button").addEventListener('click', loadList);
+        
+        function sortByPrice(){  
+            lists.sort(function(a, b){
+              return a.price-b.price;
+            });
+            cards_.innerHTML = "";
+            for (let i in lists){
+                     let card = document.createElement("div");
+                     let model_maker = document.createElement("div");
+                     let price_div = document.createElement("div");
+                     model_maker.textContent = lists[i].maker + lists[i].model;
+                     price_div.textContent = lists[i].price;
+                     card.className ="card";
+                     model_maker.className = "title";
+                     price_div.className = "price";
+                     card.append(model_maker);
+                     card.append(price_div); 
+                     cards_.append(card);  
+                     image.style.display ="none"; 
+            }
+        }
+        
+               
+    </script>
+  </body>
+
+</html>
